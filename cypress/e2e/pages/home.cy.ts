@@ -4,3 +4,5 @@ describe('Test tela', () => {
     cy.get('h1').contains('test');
   });
 });
+
+export {};
