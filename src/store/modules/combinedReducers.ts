@@ -1,11 +1,13 @@
 import { AnyAction, combineReducers } from 'redux';
 
 import TestReducer from '@store/modules/Test/index.store';
+import ConfigurationsReducer from '@store/modules/Configurations/index.store';
 import AuthReducer from './Auth/index.store';
 
 const combinedReducers = combineReducers({
   auth: AuthReducer,
   test: TestReducer,
+  configurations: ConfigurationsReducer,
 });
 
 const rootReducer = (

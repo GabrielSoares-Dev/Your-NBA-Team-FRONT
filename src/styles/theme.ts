@@ -3,7 +3,7 @@ type THEME = 'DARK' | 'LIGHT';
 const useTheme = (isTheme?: THEME) => {
   const theme = {
     colors: {
-      background: isTheme === 'DARK' ? '#000' : '#fff',
+      background: '#fff',
       primary: isTheme === 'DARK' ? '#FFFF' : '#000',
     },
   };

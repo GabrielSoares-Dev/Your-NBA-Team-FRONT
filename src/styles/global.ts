@@ -9,6 +9,8 @@ export default createGlobalStyle`
 body{
   background-color:${({ theme }) => theme.colors.background};
   font-family: Roboto, sans-serif;
+  width:100%;
+  height:100%;
 }
 
 `;

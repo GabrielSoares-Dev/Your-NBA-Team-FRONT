@@ -63,6 +63,7 @@
         "react/jsx-closing-bracket-location":"off",
         "arrow-parens":"off",
         "implicit-arrow-linebreak":"off",
-        "no-undef":"off"
+        "no-undef":"off",
+        "react/prop-types": "off"
     }
 }
