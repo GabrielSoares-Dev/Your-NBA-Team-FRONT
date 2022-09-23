@@ -5,7 +5,7 @@ import NavWeb from './Web';
 import * as Styled from './styles';
 
 const NavBar: React.FC = () => {
-  const isMobile = useMediaQuery('(max-width:700px)');
+  const isMobile = useMediaQuery('(max-width:600px)');
   return (
     <header>
       <Styled.ContainerNavBar>

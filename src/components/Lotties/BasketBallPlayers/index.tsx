@@ -6,12 +6,11 @@ const BasketBallPlayersAnimation: React.FC = () => {
     loop: true,
     autoplay: true,
     animationData: BasketBallPlayers,
-    width: '10%',
   };
 
   return (
     <>
-      <Lottie options={options} />
+      <Lottie options={options} width="40%" />
     </>
   );
 };
