@@ -10,7 +10,7 @@ const BasketBallPlayersAnimation: React.FC = () => {
 
   return (
     <>
-      <Lottie options={options} width="40%" />
+      <Lottie options={options} width="300px" />
     </>
   );
 };

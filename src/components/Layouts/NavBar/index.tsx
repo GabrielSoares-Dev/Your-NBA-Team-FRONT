@@ -1,5 +1,6 @@
 import React from 'react';
 import { useMediaQuery } from '@mui/material';
+import Divider from '@mui/material/Divider/Divider';
 import NavMobile from './Mobile';
 import NavWeb from './Web';
 import * as Styled from './styles';
@@ -11,6 +12,7 @@ const NavBar: React.FC = () => {
       <Styled.ContainerNavBar>
         {isMobile ? <NavMobile /> : <NavWeb />}
       </Styled.ContainerNavBar>
+      <Divider textAlign="center" />
     </header>
   );
 };

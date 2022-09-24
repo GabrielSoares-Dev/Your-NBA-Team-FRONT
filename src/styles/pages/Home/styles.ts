@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import { Grid } from '@mui/material';
 
 export const TitleHome = styled.h1`
   font-size: 30px;
   @media (max-width: 600px) {
-    font-size: 20px;
+    font-size: 28px;
   }
 
   color: ${({ theme }) => theme.colors.secondary};
@@ -19,9 +20,20 @@ export const NameCompany = styled.span`
 `;
 
 export const SubTitle = styled.h3`
+  text-align: center;
   font-size: 30px;
   color: ${({ theme }) => theme.colors.secondary};
   @media (max-width: 700px) {
-    font-size: 18px;
+    font-size: 20px;
   }
+`;
+export const Container = styled(Grid)`
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  @media (max-width: 700px) {
+  }
+`;
+export const ContainerTitle = styled(Grid)`
+  margin-top: 200px;
 `;

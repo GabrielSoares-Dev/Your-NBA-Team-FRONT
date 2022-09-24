@@ -50,7 +50,7 @@ const NavMobile: React.FC = () => {
               aria-label="menu"
               size="medium"
               onClick={handleDrawer}>
-              <CloseIcon color="secondary" fontSize="medium" />
+              <CloseIcon color="primary" fontSize="medium" />
             </IconButton>
             <Styled.ContainerLogo>
               <Styled.Logo onClick={() => handleNavigate('/')}>
@@ -60,8 +60,18 @@ const NavMobile: React.FC = () => {
           </Styled.ContainerBannerClose>
 
           <List>
+            <ListItemButton
+              divider
+              style={{ fontWeight: 'bold', fontSize: '300px' }}
+              onClick={() => handleNavigate('/Login')}>
+              <ListItemText
+                primary={<Styled.Itemlist>Entrar</Styled.Itemlist>}
+              />
+            </ListItemButton>
             <ListItemButton divider onClick={() => handleNavigate('/Login')}>
-              <ListItemText primary="Entrar" />
+              <ListItemText
+                primary={<Styled.Itemlist>Cadastra-se</Styled.Itemlist>}
+              />
             </ListItemButton>
           </List>
         </Styled.ContainerInsideDrawer>

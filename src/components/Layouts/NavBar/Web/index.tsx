@@ -1,5 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
+import Button from '@mui/material/Button';
 import * as Styled from './styles';
 
 const NavWeb: React.FC = () => {
@@ -13,9 +14,25 @@ const NavWeb: React.FC = () => {
         </Styled.Logo>
       </Styled.ContainerLogo>
       <Styled.ContainerLinks>
-        <Styled.Links onClick={() => handleNavigate('/Login')}>
+        <Button
+          style={{
+            textTransform: 'none',
+            fontSize: '80x',
+            marginRight: '20px',
+            fontWeight: '600',
+          }}
+          variant="text"
+          color="primary"
+          onClick={() => handleNavigate('/Login')}>
           Entrar
-        </Styled.Links>
+        </Button>
+        <Button
+          style={{ textTransform: 'none', fontSize: '18x' }}
+          variant="contained"
+          color="secondary"
+          onClick={() => handleNavigate('/Login')}>
+          Cadastrar-se
+        </Button>
       </Styled.ContainerLinks>
     </Styled.ContainerNavBarWeb>
   );

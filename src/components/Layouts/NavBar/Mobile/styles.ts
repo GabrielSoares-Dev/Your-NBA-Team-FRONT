@@ -17,6 +17,7 @@ export const ContainerLogo = styled.div`
 export const Logo = styled.h1`
   color: #d31027;
   font-size: 14px;
+  font-weight: 700;
 `;
 export const ContainerMenuLogo = styled.div`
   display: flex;
@@ -24,3 +25,7 @@ export const ContainerMenuLogo = styled.div`
   align-items: center;
 `;
 export const ContainerInsideDrawerLogo = styled.div``;
+export const Itemlist = styled.p`
+  font-weight: 700;
+  font-size: 15px;
+`;

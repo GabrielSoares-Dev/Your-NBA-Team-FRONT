@@ -3,23 +3,20 @@ import styled from 'styled-components';
 export const ContainerNavBarWeb = styled.section`
   display: flex;
   justify-content: space-between;
-  margin: 0 40px;
+  margin: 60px 80px;
   width: 100%;
 `;
 export const Logo = styled.p`
+  text-align: center;
   color: #d31027;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   cursor: pointer;
 `;
 
-export const ContainerLogo = styled.div``;
-export const ContainerLinks = styled.div``;
-export const Links = styled.p`
-  color: ${({ theme }) => theme.colors.primary};
-  font-size: 18px;
-  cursor: pointer;
-  transition-duration: 0.2s;
-  &:hover {
-    font-weight: bold;
-  }
+export const ContainerLogo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
+export const ContainerLinks = styled.div``;
