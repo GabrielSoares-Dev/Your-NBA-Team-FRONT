@@ -1,19 +1,34 @@
 import { useAppSelector, useAppDispatch } from '@store/hooks';
-import { setSun } from '@store/modules/Auth/index.store';
 import Layout from '@components/Layouts/Layout';
 import BasketBallPlayersAnimation from '@components/Lotties/BasketBallPlayers';
+import * as Styled from '@styles/pages/Home/styles';
 import type { NextPage } from 'next';
+import { Grid } from '@mui/material';
+import Button from '@mui/material/Button';
 
-const Home: NextPage = () => {
-  const { payload } = useAppSelector(state => state.auth);
-  const dispatch = useAppDispatch();
-  console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID);
-  return (
-    <Layout>
-      <BasketBallPlayersAnimation />
-      <h2>test</h2>
-    </Layout>
-  );
-};
+const Home: NextPage = () => (
+  <Layout>
+    <Styled.Container container>
+      <Styled.ContainerTitle item sm={8}>
+        <Styled.TitleHome>
+          Bem-vindos ao <Styled.NameCompany>YOUR NBA TEAM</Styled.NameCompany>{' '}
+        </Styled.TitleHome>
+      </Styled.ContainerTitle>
+      <Grid item sm={12}>
+        <BasketBallPlayersAnimation />
+      </Grid>
+      <Grid item sm={12}>
+        <Styled.SubTitle>
+          Monte seu time com os melhores jogadores da NBA
+        </Styled.SubTitle>
+      </Grid>
+      <Grid item sm={12} width="90vw">
+        <Button color="secondary" variant="contained" fullWidth>
+          Monte seu time
+        </Button>
+      </Grid>
+    </Styled.Container>
+  </Layout>
+);
 
 export default Home;

@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const ContainerNavBar = styled.nav`
-  background: #000;
+  background: #fff;
   width: 100%;
-  height: 60px;
+  height: 100px;
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    height: 70px;
+  }
 `;
