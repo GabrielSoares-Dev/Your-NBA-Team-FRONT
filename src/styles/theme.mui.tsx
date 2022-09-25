@@ -17,6 +17,15 @@ const theme = createTheme({
       fontSize: '15px',
     },
   },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 790,
+      md: 940,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
 });
 const ThemeMuiProvider: React.FC<{ children: React.ReactNode }> = ({
   children,

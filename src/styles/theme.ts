@@ -4,8 +4,8 @@ const useTheme = (isTheme?: THEME) => {
   const theme = {
     colors: {
       background: '#fff',
-      primary: '#FFFF',
-      secondary: '#000',
+      primary: '#000',
+      secondary: '#d31027',
     },
   };
   return { theme };
