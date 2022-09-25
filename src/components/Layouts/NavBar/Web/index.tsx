@@ -17,9 +17,6 @@ const NavWeb: React.FC = () => {
         <Button
           style={{
             textTransform: 'none',
-            fontSize: '80x',
-            marginRight: '20px',
-            fontWeight: '600',
           }}
           variant="text"
           color="primary"
@@ -27,10 +24,10 @@ const NavWeb: React.FC = () => {
           Entrar
         </Button>
         <Button
-          style={{ textTransform: 'none', fontSize: '18x' }}
+          style={{ textTransform: 'none' }}
           variant="contained"
           color="secondary"
-          onClick={() => handleNavigate('/Login')}>
+          onClick={() => handleNavigate('/SignUp')}>
           Cadastrar-se
         </Button>
       </Styled.ContainerLinks>

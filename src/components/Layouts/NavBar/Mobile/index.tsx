@@ -60,16 +60,17 @@ const NavMobile: React.FC = () => {
           </Styled.ContainerBannerClose>
 
           <List>
-            <ListItemButton
-              divider
-              style={{ fontWeight: 'bold', fontSize: '300px' }}
-              onClick={() => handleNavigate('/Login')}>
+            <ListItemButton divider onClick={() => handleNavigate('/Login')}>
               <ListItemText
                 primary={<Styled.Itemlist>Entrar</Styled.Itemlist>}
               />
             </ListItemButton>
-            <ListItemButton divider onClick={() => handleNavigate('/Login')}>
+            <ListItemButton
+              divider
+              onClick={() => handleNavigate('/SignUp')}
+              style={{ backgroundColor: '#d31027' }}>
               <ListItemText
+                style={{ color: '#fff' }}
                 primary={<Styled.Itemlist>Cadastra-se</Styled.Itemlist>}
               />
             </ListItemButton>

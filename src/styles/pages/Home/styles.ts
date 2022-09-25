@@ -1,39 +1,37 @@
 import styled from 'styled-components';
 import { Grid } from '@mui/material';
 
-export const TitleHome = styled.h1`
-  font-size: 30px;
-  @media (max-width: 600px) {
-    font-size: 28px;
-  }
-
-  color: ${({ theme }) => theme.colors.secondary};
-  font-weight: 500;
-`;
-
-export const NameCompany = styled.span`
-  font-size: 30px;
-  color: #d31027;
-  @media (max-width: 600px) {
-    font-size: 20px;
-  }
-`;
-
-export const SubTitle = styled.h3`
-  text-align: center;
-  font-size: 30px;
-  color: ${({ theme }) => theme.colors.secondary};
-  @media (max-width: 700px) {
-    font-size: 20px;
-  }
-`;
 export const Container = styled(Grid)`
-  width: 100%;
-  height: 100%;
   justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const Content = styled(Grid)`
+  justify-content: center;
+  align-items: center;
+`;
+export const TitleHome = styled.h1`
+  font-size: 50px;
+  font-weight: 900;
+  color: ${({ theme }) => theme.colors.primary};
+  text-align: center;
+`;
+
+export const Slogan = styled.span`
+  color: ${({ theme }) => theme.colors.secondary};
+`;
+export const Description = styled.p`
+  color: ${({ theme }) => theme.colors.primary};
+  opacity: 0.8;
+  text-align: center;
+`;
+export const ContainerButton = styled(Grid)`
   @media (max-width: 700px) {
+    width: 90%;
   }
 `;
-export const ContainerTitle = styled(Grid)`
-  margin-top: 200px;
-`;
+export const ContainerDescription = styled(Grid)``;
+export const ContainerTitle = styled(Grid)``;

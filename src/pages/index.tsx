@@ -5,30 +5,45 @@ import * as Styled from '@styles/pages/Home/styles';
 import type { NextPage } from 'next';
 import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
+import { useRouter } from 'next/router';
 
-const Home: NextPage = () => (
-  <Layout>
-    <Styled.Container container>
-      <Styled.ContainerTitle item sm={8}>
-        <Styled.TitleHome>
-          Bem-vindos ao <Styled.NameCompany>YOUR NBA TEAM</Styled.NameCompany>{' '}
-        </Styled.TitleHome>
-      </Styled.ContainerTitle>
-      <Grid item sm={12}>
-        <BasketBallPlayersAnimation />
-      </Grid>
-      <Grid item sm={12}>
-        <Styled.SubTitle>
-          Monte seu time com os melhores jogadores da NBA
-        </Styled.SubTitle>
-      </Grid>
-      <Grid item sm={12} width="90vw">
-        <Button color="secondary" variant="contained" fullWidth>
-          Monte seu time
-        </Button>
-      </Grid>
-    </Styled.Container>
-  </Layout>
-);
+const Home: NextPage = () => {
+  const { push } = useRouter();
+
+  const handleNavigate = () => {
+    push('/YourTeam');
+  };
+
+  return (
+    <Layout>
+      <Styled.Container container>
+        <Styled.Content container spacing={4}>
+          <Styled.ContainerTitle item xs={12}>
+            <Styled.TitleHome>
+              Monte seu Time e <Styled.Slogan> Torne-se Campeão </Styled.Slogan>
+            </Styled.TitleHome>
+          </Styled.ContainerTitle>
+          <Styled.ContainerDescription item xs={12}>
+            <Styled.Description>
+              Monte sua formação dos sonhos coms os melhores jogadores da NBA!
+            </Styled.Description>
+          </Styled.ContainerDescription>
+          <Styled.ContainerButton item sm={12} md={2} lg={2}>
+            <Button
+              onClick={handleNavigate}
+              style={{
+                textTransform: 'none',
+              }}
+              color="secondary"
+              variant="contained"
+              fullWidth>
+              Monte seu time
+            </Button>
+          </Styled.ContainerButton>
+        </Styled.Content>
+      </Styled.Container>
+    </Layout>
+  );
+};
 
 export default Home;
