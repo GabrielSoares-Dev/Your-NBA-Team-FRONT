@@ -25,7 +25,7 @@ const Home: NextPage = () => {
           </Styled.ContainerTitle>
           <Styled.ContainerDescription item xs={12}>
             <Styled.Description>
-              Monte sua formação dos sonhos coms os melhores jogadores da NBA!
+              Monte sua formação dos sonhos com os melhores jogadores da NBA!
             </Styled.Description>
           </Styled.ContainerDescription>
           <Styled.ContainerButton item sm={12} md={2} lg={2}>
